@@ -1,0 +1,17 @@
+print("welcome to monoalphabetic cipher crypography")
+alpha = "abcdefghijklmnopqrstuvwxyz"
+
+val = str(input("enter a string\t"))    # for taking input from user as STRING
+print("your cipher =\t", end='')
+
+for i in range(len(val)):           # i for lenght isequals to val string lenght
+
+    for j in range(len(alpha)):         # this loop for find ith value of val string in alpha string
+
+        if val[i] == alpha[j]:          # comparing val's alphabet with recursively to the alpha string
+
+            print(alpha[j+3],end='')   # just printing 3rd alphabet after matching of val's alphabet
+            break
+
+    else:
+        print("get serious")
