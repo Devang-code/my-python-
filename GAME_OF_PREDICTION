@@ -1,0 +1,28 @@
+print("welcome to predictor game...!!!!")
+print("choose one of the following and answer some next question")
+print("1. RED\n2. WHITE\n3. GREEN\n4. YELLOW\n5. BLUE\n")
+print("answer my question")
+print("IS IT PRESENT IN FOLLOWING COLOR.....\n\tRED\n\tWHITE\n\tGREEN")
+
+result1 = input("press Y for YES and N for NO\n\n")
+
+if result1 == 'Y' or result1 == 'y':
+         print("IS IT PRESENT IN FOLLOWING COLOR.....\n\tYELLOW\n\tWHITE\n\tGREEN")
+         result2 = input("press Y for YES and N for NO\n\n")
+         if result2 == 'N' or result2 == 'n':
+             print("you are looking for RED")
+         else:
+                 print("IS IT PRESENT IN FOLLOWING COLOR.....\n\tYELLOW\n\tBLUE\n\tGREEN")
+                 result3 = input("press Y for YES and N for NO\n\n")
+                 if result3 == 'Y' or result3 == 'y':
+                    print("you are looking for GREEN")
+                 else:
+                    print("you are looking for WHITE")
+
+elif result1 == 'N' or result1 == 'n':
+    print("IS IT PRESENT IN FOLLOWING COLOR.....\n\tYELLOW\n\tWHITE\n\tGREEN")
+    result4 = input("press Y for YES and N for NO\n\n")
+    if result4 == 'Y' or result4 == 'y':
+        print("you are looking for YELLOW")
+    else:
+        print("you are looking for BLUE")
