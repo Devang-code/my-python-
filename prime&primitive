@@ -1,0 +1,36 @@
+import math
+mylist = []
+a = int(input("enter number to check is it prime or not\n"))
+n = int(a/2)
+count =0
+counter = 0
+
+for i in range(2,n+1):
+    if a % i == 0:
+        count += 1
+
+print("\t")
+
+if count == 0:
+    b = int(input("enter value for check primitive root\n"))
+    c = a-1
+
+    for j in range(0,c+1):
+        mylist.append(int(math.pow(b,j) % a))
+
+    mylist.sort()
+    print(mylist)
+
+    for k in range(0,len(mylist)):
+        for m in range(k+1,len(mylist)):
+            if mylist[k] == mylist[m]:
+                counter += 1
+            break
+
+    if counter != 0 :
+        print(b,"is not primitive root of",a)
+    else:
+        print(b,"is primitive root of",a)
+
+else:
+    print(a, "is not prime number")
