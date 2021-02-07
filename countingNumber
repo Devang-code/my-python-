@@ -1,0 +1,13 @@
+str1 = input("enter your random digit number\n\t")          # Take input from user
+print("digit in entered number = occurance")
+for i in range(0,10):            #loop for number as 0 to 9
+
+    count = 0           #for counting occurance of number
+
+    for j in range(0,len(str1)):            #loop for number of digit
+        if i == int(str1[j]):           #compare string index as integer to loop for 0-9
+
+                count += 1          #as match arrive count increase
+
+    if count > 0:
+        print(i , "=" , count)
