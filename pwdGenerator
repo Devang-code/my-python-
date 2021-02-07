@@ -1,0 +1,7 @@
+import random
+import string
+alphabet_string = string.ascii_letters + string.digits
+
+n = int(input("enter length to generate password \n"))
+for i in range(0,n):
+    print(random.choice(alphabet_string),end="")
