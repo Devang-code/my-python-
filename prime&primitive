@@ -13,7 +13,7 @@ print("\t")
 
 if count == 0:
     b = int(input("enter value for check primitive root\n"))
-    c = a-1
+    c = a-2
 
     for j in range(0,c+1):
         mylist.append(int(math.pow(b,j) % a))
