@@ -1,0 +1,17 @@
+import random
+import string
+
+alphabet_string = string.ascii_letters + string.digits
+str = ""
+
+n = int(input("enter length to generate password \n"))
+for i in range(0,n):
+    str += random.choice(alphabet_string)
+print(str)
+
+r = input("enter password as above\n")
+
+if str == r:
+    print("password is matched")
+else:
+    print("password is not matched")
