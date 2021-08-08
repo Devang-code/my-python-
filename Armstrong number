@@ -1,0 +1,22 @@
+num = int(input("enter the number = "))
+n1 = num
+n2 = num
+
+count = 0
+sum = 0
+
+while(n1 > 0):
+    count = count + 1
+    n1 = n1 // 10
+print("digits in number = ", count)
+
+while(num != 0):
+    d = num % 10
+    cube = d**count
+    sum = sum + cube
+    num = num // 10
+    
+if(n2 == sum):
+    print("An armstrong number")
+else:
+    print("not an armstrong number")
