@@ -1,0 +1,12 @@
+num = int(input("enter the number = "))
+n1 = num
+rev_num = 0
+while(num != 0):
+    d = num % 10
+    rev_num = rev_num * 10 + d
+    num = num // 10
+
+if(n1 == rev_num):
+    print("palindrome number")
+else:
+    print("not palindrome number")
